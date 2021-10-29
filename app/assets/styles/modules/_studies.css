@@ -1,0 +1,43 @@
+.studies {
+    padding: 4.8rem;
+    margin-left: 4.8rem;
+    display: flex;
+    flex-direction: column;
+    &__title {
+        position: relative;
+        margin: 4rem 0;
+        &:after {
+            background: $dark;
+            bottom: 0;
+            content: '';
+            height: 1px;
+            left: 0;
+            position: absolute;
+            transition: transform 0.7s;
+            width: 100%;
+            transform: scaleX(0);
+            transform-origin: right center;
+        }
+        &:hover:after {
+            transform: scaleX(1);
+            transform-origin: left center;
+        }
+    }
+    &__text {
+        display: none;
+        @mixin atSmall{line-height: 2;
+        margin-right: 2.4rem;}
+    }
+    &__list {
+        margin-top: 2.4rem;
+        list-style: none;
+        line-height: 2.5rem;
+        font-family: $nmb;
+        color: $dark;
+        &__item{
+            margin-right: 2.4rem;
+            &:hover {
+            background: $yellow;
+        }}
+    }
+}

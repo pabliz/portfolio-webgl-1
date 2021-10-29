@@ -1,0 +1,100 @@
+.header {
+    display: none;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 10%, rgba(255, 255, 255, 1) 40%);
+    @mixin atSmall {
+        z-index: 1;
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 4.8rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__mobile {
+        display: block;
+        height: 100%;
+        padding: 2.4rem;
+        @mixin atSmall {
+            display: none;
+        }
+    }
+    &__title {
+        position: relative;
+        margin: 0;
+        &:after {
+            background: $dark;
+            bottom: 0;
+            content: '';
+            height: 1px;
+            left: 0;
+            position: absolute;
+            transition: transform 0.7s;
+            width: 100%;
+            transform: scaleX(0);
+            transform-origin: right center;
+        }
+        &:hover {
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 1px;
+            &:after {
+                transform: scaleX(1);
+                transform-origin: left center;
+            }
+        }
+    }
+    &__subtitle {
+        margin: 0;
+        position: relative;
+        &:after {
+            background: $dark;
+            bottom: 0;
+            content: '';
+            height: 1px;
+            left: 0;
+            position: absolute;
+            transition: transform 0.7s;
+            width: 100%;
+            transform: scaleX(0);
+            transform-origin: right center;
+        }
+        &:hover {
+            background: $yellow;
+            &:after {
+                transform: scaleX(1);
+                transform-origin: left center;
+            }
+        }
+    }
+    &__motto {
+        position: relative;
+        line-height: 1.5;
+        @mxin atSmall {
+            line-height: 1;
+        }
+        &:after {
+            background: $dark;
+            bottom: 0;
+            content: '';
+            height: 1px;
+            left: 0;
+            position: absolute;
+            transition: transform 0.7s;
+            width: 100%;
+            transform: scaleX(0);
+            transform-origin: right center;
+        }
+        &:hover&:after {
+            transform: scaleX(1);
+            transform-origin: left center;
+        }
+    }
+}
+
+.br {
+    display: block;
+    @mixin atSmall {
+        display: none;
+    }
+}

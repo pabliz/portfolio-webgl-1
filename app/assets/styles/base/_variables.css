@@ -1,0 +1,40 @@
+/* FONTS */
+
+$nmr: "Neue Montreal Regular";
+$nmi: "Neue Montreal Italic";
+$nmb: "Neue Montreal Bold";
+$nml: "Neue Montreal Light";
+$nmli: "Neue Montreal Light Italic";
+$fcb: "Formula Condensed Bold";
+$fcl: "Formula Condensed Light";
+$fcr: "Formula Condensed Regular";
+$sul: "Supply UltraLight";
+
+/* COLORS */
+
+$white: #fff;
+$black: #000;
+$red: #FF3100;
+$active: #801a00;
+$yellow: #FEF600;
+$blue: #1f40d3;
+$lightest: #E3E5E8;
+$light: #ABAFB8;
+$dark: #525661;
+$darkest: #17191C;
+
+/* SIZES */
+
+/* $huge: 17rem; */
+$huge: clamp(7.2rem, -0.875rem + 8.333333vw, 17rem);
+/* $big: 7.2rem; */
+$big: clamp(3.2rem, -0.875rem + 8.333333vw, 7.2rem);
+/* $mid: 4.0rem; */
+$mid: clamp(1.6rem, -0.875rem + 8.333333vw, 4.0rem);
+/* $text: 1.6rem; */
+$text: clamp(1.2rem, -0.875rem + 8.333333vw, 1.6rem);
+/* $small: 1.2rem; */
+$small: clamp(1rem, -0.875rem + 8.333333vw, 1.2rem);
+/* $tiny: 1rem; */
+$tiny: clamp(.8rem, -0.875rem + 8.333333vw, 1rem);
+$svg: clamp(4.8rem, -0.875rem + 8.333333vw, 6.4rem);

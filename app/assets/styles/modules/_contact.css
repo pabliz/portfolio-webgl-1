@@ -1,0 +1,78 @@
+.contact {
+    width: 100vw;
+    word-wrap: break-all;
+    padding: 2.4rem;
+    white-space: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    @mixin atSmall {
+        width: 80%;
+        padding: 4.8rem;
+        height: 80vh;
+        margin-right: 4.8rem;
+        justify-content: flex-end;
+    }
+    @mixin atMedium {
+        height: 90vh;
+    }
+    &__text {
+        padding-top: 4.8rem;
+        padding-bottom: 4.8rem;
+        font-size: $mid;
+        font-family: $nmr;
+        text-transform: uppercase;
+        color: $darkest;
+        line-height: 1.5;
+        @mixin atSmall {
+            line-height: 1;
+        }
+        /* &:after {
+            background: $dark;
+            bottom: 0;
+            content: '';
+            height: 1px;
+            left: 0;
+            position: absolute;
+            transition: transform 0.7s;
+            width: 100%;
+            transform: scaleX(0);
+            transform-origin: right center;
+        }
+        &:hover {
+            background: $yellow;
+            &:after {
+                transform: scaleX(1);
+                transform-origin: left center;
+            }
+        } */
+    }
+    &__social__row {
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        justify-content: space-between;
+        @mixin atSmall {
+            width: 60%;
+    }
+    @mixin atLarge {
+        width: 30%;
+}
+}
+}
+.copiedtext {
+    position: absolute;
+    left: 0; top: 0; right: 0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-1em);
+    color: #000;
+    transition: all .500s;
+  }
+.copied .copiedtext {
+    opacity: 1;
+    transform: translateY(-2em);
+  }
+/* #email {
+    color: $red;
+} */

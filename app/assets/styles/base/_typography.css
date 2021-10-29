@@ -1,0 +1,168 @@
+/*IMPORTS*/
+
+@font-face {
+    font-family: "Neue Montreal Regular";
+    src: url("./assets/fonts/NeueMontreal-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Neue Montreal Italic";
+    src: url("./assets/fonts/NeueMontreal-Italic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Neue Montreal Bold";
+    src: url("./assets/fonts/NeueMontreal-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Neue Montreal Light";
+    src: url("./assets/fonts/NeueMontreal-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Neue Montreal Light Italic";
+    src: url("./assets/fonts/NeueMontreal-LightItalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Neue Montreal Bold Italic";
+    src: url("./assets/fonts/NeueMontreal-BoldItalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Formula Condensed Bold";
+    src: url("./assets/fonts/FormulaCondensed-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Formula Condensed Light";
+    src: url("./assets/fonts/FormulaCondensed-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Formula Condensed Regular";
+    src: url("./assets/fonts/FormulaCondensed-Regular.woff") format("woff");
+}
+
+
+/* HEADINGS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.05;
+}
+
+h2 {
+    letter-spacing: 0.7rem;
+}
+
+h3 {
+    letter-spacing: 0.35rem;
+}
+
+h1 {
+    font-size: $huge;
+    font-family: $nmb;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    overflow: hidden;
+    & span {
+        display: inline-block;
+    }
+}
+
+h2 {
+    font-size: $big;
+    font-family: $nmb;
+    color: $dark;
+    @mixin atSmall {
+        color: $darkest;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+    }
+}
+
+h3 {
+    font-size: $mid;
+    font-family: $nml;
+}
+
+h4 {
+    font-size: $text;
+    font-family: $nmli;
+    letter-spacing: 0.3rem;
+}
+
+h5 {
+    font-size: $small;
+    font-family: $nmi;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-family: $nml;
+    letter-spacing: 0.1rem;
+    font-size: $tiny;
+    text-transform: uppercase;
+}
+
+
+/* TEXT */
+
+p,
+a,
+li {
+    font-size: $text;
+    letter-spacing: .08rem;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+/* SPANS */
+
+.uc {
+    text-transform: uppercase;
+}
+
+#swap:hover {
+    background: $yellow;
+}
+
+.red {
+    color: $red;
+}
+
+.yellow {
+    background: $yellow;
+}
+
+.bold {
+    font-family: $nmb;
+    text-decoration: overline;
+    &:hover {
+        background: $yellow;
+    }
+}
+
+.italic {
+    font-family: $nmi;
+    color: $dark;
+}
+
+.prot {
+    display: none;
+}

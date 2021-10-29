@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+    /* font-size: calc(100vw / 1920 * 10); */
+    line-height: 1;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $nmr;
+    font-weight: normal;
+    color: $darkest;
+    /* background: linear-gradient(138deg, $lightest 0%, rgba(82, 86, 97, 0.6643032212885154) 100%); */
+    cursor: crosshair;
+}
+
+main {
+    width: auto;
+    height: auto;
+}
+
+.cursor {
+    display: none;
+    @mixin atLarge {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1px;
+        height: 0;
+        border-left: 1px solid $yellow;
+        background: transparent;
+        z-index: 2;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.wrapper {
+    position: absolute;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    display: block;
+}
+
+#container {
+    margin: 0;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}

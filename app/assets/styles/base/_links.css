@@ -1,0 +1,31 @@
+a {
+    cursor: crosshair;
+}
+
+.email {
+    box-shadow: none;
+    background: none;
+    position: relative;
+    font-size: $mid;
+    letter-spacing: 0.2rem;
+    color: $darkest;
+    line-height: 1.5;
+    &:after {
+        background: $dark;
+        bottom: 0;
+        content: '';
+        height: 1px;
+        left: 0;
+        position: absolute;
+        transition: transform 0.7s;
+        width: 100%;
+        transform: scaleX(0);
+        transform-origin: right center;
+    }
+    &:hover{
+        background: $yellow;
+        &:after {
+        transform: scaleX(1);
+        transform-origin: left center;}
+    }
+}

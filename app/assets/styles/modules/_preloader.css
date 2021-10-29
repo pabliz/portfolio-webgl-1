@@ -1,0 +1,50 @@
+.preloader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $dark;
+  background: $darkest;
+  z-index: 1;
+  &__text{
+    width: auto;
+    &__paragraph {
+    font-size: $text;
+    font-family: $nmr;
+    &:after {
+      background: $dark;
+      bottom: 30%;
+      content: '';
+      height: 1px;
+      left: 0;
+      position: absolute;
+      transition: transform 0.7s;
+      width: 100%;
+      transform: scaleX(0);
+      transform-origin: left center;
+      animation-duration: 1.5s;
+      animation-name: loading;
+      animation-iteration-count: infinite;
+      /* animation-direction: alternate; */
+  }
+  }}
+  &__text__paragraph__loading {
+    font-size: $mid;
+    font-family: $nmli;
+  }
+}
+
+@keyframes loading {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}

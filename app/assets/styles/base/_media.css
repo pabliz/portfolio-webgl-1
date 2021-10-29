@@ -1,0 +1,19 @@
+img,
+video {
+    opacity: 0;
+    width: 100%;
+}
+
+svg {
+    width: $svg;
+    height: $svg;
+    
+}
+
+svg:not(#insta):hover {
+    fill: $red;
+}
+
+svg#insta:hover {
+    stroke: $red;
+}
