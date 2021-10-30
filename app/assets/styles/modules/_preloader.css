@@ -17,7 +17,7 @@
             font-size: $text;
             font-family: $nmr;
             &:after {
-                background: $dark;
+                background: $light;
                 bottom: 30%;
                 content: '';
                 height: 1px;
@@ -27,14 +27,14 @@
                 width: 100%;
                 transform: scaleX(0);
                 transform-origin: left center;
-                animation-duration: 1.5s;
+                animation-duration: 5s;
                 animation-name: loading;
                 animation-iteration-count: infinite;
-                /* animation-direction: alternate; */
             }
         }
     }
     &__text__paragraph__loading {
+        color: $light;
         font-size: $mid;
         font-family: $nmli;
     }
@@ -46,5 +46,32 @@
     }
     to {
         transform: scaleX(1);
+    }
+}
+
+.dot {
+    margin-right: -.35rem;
+    animation-name: hangin;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    &:first-of-type {
+        margin-left: -.35rem;
+        animation-delay: .33s;
+    }
+    &:nth-of-type(2) {
+        animation-delay: .66s;
+    }
+    &:last-of-type {
+        animation-delay: 1s;
+    }
+}
+
+@keyframes hangin {
+    from {
+        color: $light;
+    }
+    to {
+        color: $darkest;
     }
 }

@@ -12,6 +12,9 @@
         flex-direction: column;
         align-items: flex-start;
     }
+    @mixin atLarge {
+        padding: 2.4rem 4.8rem;
+    }
     &__mobile {
         display: block;
         height: 100%;
@@ -36,8 +39,10 @@
             transform-origin: right center;
         }
         &:hover {
-            -webkit-text-fill-color: transparent;
-            -webkit-text-stroke-width: 1px;
+            @mixin atLarge {
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke-width: 1px;
+            }
             &:after {
                 transform: scaleX(1);
                 transform-origin: left center;

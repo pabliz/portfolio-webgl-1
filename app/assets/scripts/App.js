@@ -4,7 +4,6 @@ import Canvas from './modules/Canvas';
 import SwapSpan from "./modules/SwapSpan";
 
 import gsap from "gsap";
-
 new Canvas({
     dom: document.getElementById('container')
 });
@@ -15,11 +14,14 @@ if (module.hot) {
     module.hot.accept();
 }
 // PRELOADER
+
 const preloader = document.querySelector(".preloader");
 const main = document.querySelector("main");
-window.addEventListener("load", ()=>{
+
+window.addEventListener("load", () => {
+
     gsap.to(preloader, {
-        delay: 1,
+        delay: 2,
         duration: .1,
         autoAlpha: 0
     })
@@ -29,18 +31,19 @@ window.addEventListener("load", ()=>{
         duration: .3,
     })
 })
+
 // CURSOR
 const cursor = document.querySelector(".cursor")
 
 document.addEventListener('mousemove', (e) => {
-gsap.to(cursor, {
-    x: ( -e.pageX),
-    height: e.pageY,
-})
+    gsap.to(cursor, {
+        x: (-e.pageX),
+        height: e.pageY,
+    })
 })
 
 document.addEventListener("dblclick", () => {
-    cursor.classList.toggle("hidden");
-})
-// SWAPSPAN
+        cursor.classList.toggle("hidden");
+    })
+    // SWAPSPAN
 new SwapSpan();
