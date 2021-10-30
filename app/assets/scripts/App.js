@@ -4,15 +4,15 @@ import Canvas from './modules/Canvas';
 import SwapSpan from "./modules/SwapSpan";
 
 import gsap from "gsap";
-new Canvas({
-    dom: document.getElementById('container')
-});
 
 
 
 if (module.hot) {
     module.hot.accept();
 }
+new Canvas({
+    dom: document.getElementById('container')
+});
 // PRELOADER
 
 const preloader = document.querySelector(".preloader");
