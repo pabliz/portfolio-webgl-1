@@ -68,11 +68,6 @@ export default class Canvas {
                     resolve();
                 });
             });
-            const fcb = new Promise((resolve) => {
-                new FontFaceObserver("Formula Condensed Bold").load().then(() => {
-                    resolve();
-                });
-            });
             // preload images
             const preloadImages = new Promise((resolve, reject) => {
                 imagesLoaded(
@@ -80,7 +75,7 @@ export default class Canvas {
                     resolve
                 );
             });
-            let allDone = [nmr, nml, nmli, nmb, fcb, preloadImages];
+            let allDone = [nmr, nml, nmli, nmb, preloadImages];
             this.currentScroll = 0;
             this.raycaster = new THREE.Raycaster();
             this.mouse = new THREE.Vector2();
@@ -111,7 +106,7 @@ export default class Canvas {
                 uniforms: {
                     "tDiffuse": { value: null },
                     "scrollSpeed": { value: null },
-                    "uTime": {value: 0}
+                    "uTime": { value: 0 }
                 },
                 vertexShader: distortVertex,
                 fragmentShader: distortFragment,

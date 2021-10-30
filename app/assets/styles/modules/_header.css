@@ -1,4 +1,6 @@
 .header {
+    background: $darkest;
+    color: $lightest;
     display: none;
     width: 100%;
     /* background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 10%, rgba(255, 255, 255, 1) 40%); */
@@ -13,9 +15,19 @@
         align-items: flex-start;
     }
     @mixin atLarge {
-        padding: 2.4rem 4.8rem;
+        padding: 2rem 4.8rem;
+        padding-top: 1rem;
+    }
+    & h2 {
+        @mixin atSmall {
+            color: $lightest;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 1px;
+        }
     }
     &__mobile {
+        background: $darkest;
+        color: $lightest;
         display: block;
         height: 100%;
         padding: 2.4rem;
@@ -52,6 +64,7 @@
     &__subtitle {
         margin: 0;
         position: relative;
+        color: $lightest;
         &:after {
             background: $dark;
             bottom: 0;
@@ -65,7 +78,7 @@
             transform-origin: right center;
         }
         &:hover {
-            background: $yellow;
+            /* background: $yellow; */
             &:after {
                 transform: scaleX(1);
                 transform-origin: left center;
@@ -74,6 +87,7 @@
     }
     &__motto {
         position: relative;
+        color: $lightest;
         line-height: 1.5;
         @mxin atSmall {
             line-height: 1;

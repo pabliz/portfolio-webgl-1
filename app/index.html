@@ -41,26 +41,27 @@
             </header>
             <div class="main">
                 <section class="contact">
-                    <p class="studies__text">
+                    <!-- <p class="studies__text">
                         <span class="bold">Online</span> is where most of our lives take space today. <br />The possibilities in digital experience are now
                         <span class="bold">endless</span>.<br />I help people translate ideas from <span class="bold">words and visual</span> inputs into
                         <span class="bold">dynamic and interactive</span> web events.<br />I am an explorer of controlled randomness in
                         <span class="bold">interface design and audio</span>.
-                    </p>
+                    </p> -->
                     <ul class="studies__list">
                         <li class="studies__list__item">
-                            Technologies i use:
+                            <span class="inverse">Technologies i use:</span><br>
                             <span class="italic">HTML, CSS, JavaScript, NodeJs, WebGL</span>
                         </li>
                         <li class="studies__list__item">
-                            Tools I use: <span class="italic">Webpack, Git</span>
+                            <span class="inverse">Tools I use:</span><br>
+                            <span class="italic">Webpack, Git</span>
                         </li>
                         <li class="studies__list__item">
-                            Content Management Systems I use:
+                            <span class="inverse">Content Management Systems I use:</span><br>
                             <span class="italic">WordPress, Drupal, Prismic</span>
                         </li>
                         <li class="studies__list__item">
-                            Libraries & Frameworks:
+                            <span class="inverse">Libraries & Frameworks:</span><br>
                             <span class="italic">
                   BootStrap, TailwindCSS, Materialize, SASS, PostCSS, GreenSock,
                   BarbaJs, Highway.Js, Three.Js, ReactJs</span
@@ -68,8 +69,7 @@
               </li>
             </ul>
             <h3 id="email" class="contact__text">
-              reach out: <a class="email">paoloiocca
-              <span class="prot">kcufmaps</span> @protonmail.com</a>
+              reach out:<br class="br"> <span class="email">paoloiocca<span class="prot">kcufmaps</span><br class="br">@protonmail.com</span>
                             </h3>
                             <div class="contact__social__row">
 
@@ -83,7 +83,7 @@
                   </svg>
                                     </a>
                                 </div>
-                                <div id="fb" class="contact__social__col">
+                                <!-- <div id="fb" class="contact__social__col">
                                     <a href="https://www.facebook.com/pablizyocka/" target="_blank">
                                         <svg viewBox="0 0 36 36" fill="black" height="64" width="64">
                     <path
@@ -139,7 +139,7 @@
                     />
                   </svg>
                                     </a>
-                                </div>
+                                </div> -->
                                 <div id="li" class="contact__social__col">
                                     <a href="https://www.linkedin.com/in/paolo-iocca/" target="_blank">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 34 34" fill="black">
@@ -151,6 +151,13 @@
                   </svg>
                                     </a>
                                 </div>
+                                <div id="scroll-down" class="contact__social__col">
+                                    <a href="#">
+                                        <h3 class="section__info__link neon">
+                                            Scroll down ↓
+                                        </h3>
+                                    </a>
+                                </div>
                             </div>
                 </section>
                 <section class="section" id="alis">
@@ -160,14 +167,26 @@
                         </a>
                     </div>
                     <div class="section__info">
-                        <a class="section__info__link" href="https://www.studioalis.it/" target="_blank">
-                            <h3 class="section__info__title">
-                                Studio Alis<br />Infortunistica Stradale
-                            </h3>
-                        </a>
+                        <h3 class="section__info__title">
+                            <span class="inverse">Studio Alis</span>
+                        </h3>
                         <p class="section__info__text">
                             UI restyling and Front-End Development I worked on at AltaSartoria Srl for a client’s website. I contributed to some restyling ideas, to a good part of its coding and Drupal theme development.
                         </p>
+                        <ul class="section__info__text">
+                            <li class="bold">Workflow:</li>
+                            <li>Photoshop</li>
+                            <li>plain HTML/CSS (editor: VSCode)</li>
+                            <li>GSAP for animations</li>
+                            <li>integration in YAML file (Drupal)</li>
+                        </ul>
+
+                        <a href="https://www.studioalis.it/" target="_blank">
+                            <h3 class="section__info__link">
+                                Visit →
+                            </h3>
+                        </a>
+
                     </div>
                 </section>
                 <section class="section" id="travel">
@@ -176,14 +195,24 @@
                             <img src="./assets/images/projects/travel-site/travel-site-case-study-mobile-frame-screenshot.png" alt="A Travel Agency Case Study" width="300" class="proj-media" /></a>
                     </div>
                     <div class="section__info">
-                        <a class="section__info__link" href="https://travel-site-case-study.netlify.app/" target="_blank">
-                            <h3 class="section__info__title">
-                                Travel Agency<br />(Case Study)
-                            </h3>
-                        </a>
+                        <h3 class="section__info__title">
+                            <span class="inverse">Travel Agency</span>
+                        </h3>
                         <p class="section__info__text">
                             A case study for a Travel Agency Website done as project for my “Web Developer Workflow” Online Course.
                         </p>
+                        <ul class="section__info__text">
+                            <li class="bold">Workflow:</li>
+                            <li>Node.js (editor: VSCode)</li>
+                            <li>Webpack</li>
+                            <li>PostCSS</li>
+                            <li>Vanilla JavaScript for animations</li>
+                        </ul>
+                        <a href="https://travel-site-case-study.netlify.app/" target="_blank">
+                            <h3 class="section__info__link">
+                                ← Visit
+                            </h3>
+                        </a>
                     </div>
                 </section>
                 <section class="section" id="zen">
@@ -193,12 +222,17 @@
                         </a>
                     </div>
                     <div class="section__info">
-                        <a class="section__info__link" href="https://pabliz-word-hunt.netlify.app/" target="_blank">
-                            <h3 class="section__info__title">Word Hunt PWA</h3>
-                        </a>
+                        <h3 class="section__info__title"><span class="inverse">Word Hunt</span></h3>
                         <p class="section__info__text">
-                            A Dictionary progressive web app I made in a React Class.
+                            A progressive web app dictionary I made in React.
                         </p>
+                        <ul class="section__info__text">
+                            <li class="bold">Workflow:</li>
+                            <li>React (editor: VSCode)</li>
+                        </ul>
+                        <a href="https://pabliz-word-hunt.netlify.app/" target="_blank">
+                            <h3 class="section__info__link">Visit →</h3>
+                        </a>
                     </div>
                 </section>
                 <section class="contact">
@@ -207,26 +241,26 @@
                     </h2>
                     <ul class="studies__list">
                         <li class="studies__list__item">
-                            React Developer - <span class="italic">LinkedIn Learning</span>
+                            <span class="inverse">React Developer</span> - <span class="italic">LinkedIn Learning</span>
                         </li>
                         <li class="studies__list__item">
-                            IFTS Tecnico Web Designer - <span class="italic">CNOS-FAP</span>
+                            <span class="inverse">IFTS Tecnico Web Designer</span> - <span class="italic">CNOS-FAP</span>
                         </li>
                         <li class="studies__list__item">
-                            Web Developer Modern Workflow -
+                            <span class="inverse">Web Developer Modern Workflow</span> -
                             <span class="italic">Udemy</span>
                         </li>
                         <li class="studies__list__item">
-                            The Complete SASS Course - <span class="italic">Udemy</span>
+                            <span class="inverse">The Complete SASS Course</span> - <span class="italic">Udemy</span>
                         </li>
                         <li class="studies__list__item">
-                            Sound Designer per media lineari e non-lineari -
+                            <span class="inverse">Sound Designer per media lineari e non-lineari</span> -
                             <span class="italic">Ecipar</span>
                         </li>
                     </ul>
                     <h3 id="email" class="contact__text">
-                        reach out: <a class="email">paoloiocca
-              <span class="prot">kcufmaps</span> @protonmail.com</a>
+                        reach out:<br class="br"> <a class="email">paoloiocca
+              <span class="prot">kcufmaps</span><br class="br">@protonmail.com</a>
                     </h3>
                     <div class="contact__social__row">
                         <div id="github" class="contact__social__col">
@@ -239,7 +273,7 @@
                   </svg>
                             </a>
                         </div>
-                        <div id="fb" class="contact__social__col">
+                        <!-- <div id="fb" class="contact__social__col">
                             <a href="https://www.facebook.com/pablizyocka/" target="_blank">
                                 <svg viewBox="0 0 36 36" fill="black" height="64" width="64">
                     <path
@@ -295,7 +329,7 @@
                     />
                   </svg>
                             </a>
-                        </div>
+                        </div> -->
                         <div id="li" class="contact__social__col">
                             <a href="https://www.linkedin.com/in/paolo-iocca/" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 34 34" fill="black">
@@ -305,6 +339,13 @@
                       ></path>
                     </g>
                   </svg>
+                            </a>
+                        </div>
+                        <div id="scroll-top" class="contact__social__col">
+                            <a href="#">
+                                <h3 class="section__info__link">
+                                    Scroll to top ↑
+                                </h3>
                             </a>
                         </div>
                     </div>

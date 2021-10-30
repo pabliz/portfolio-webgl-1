@@ -25,19 +25,23 @@
     }
     &__text {
         display: none;
-        @mixin atSmall{line-height: 2;
-        margin-right: 2.4rem;}
+        @mixin atSmall {
+            line-height: 2;
+            margin-right: 2.4rem;
+        }
     }
     &__list {
         margin-top: 2.4rem;
         list-style: none;
-        line-height: 2.5rem;
-        font-family: $nmb;
-        color: $dark;
-        &__item{
+        font-family: $nmr;
+        &__item {
+            line-height: 1.5;
+            font-size: $mid;
             margin-right: 2.4rem;
             &:hover {
-            background: $yellow;
-        }}
+                background: $yellow;
+                color: $darkest;
+            }
+        }
     }
 }

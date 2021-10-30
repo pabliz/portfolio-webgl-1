@@ -7,7 +7,10 @@ video {
 svg {
     width: $svg;
     height: $svg;
-    
+    margin-right: 2.4rem;
+    @mixin atSmall {
+        margin-right: 4.8rem;
+    }
 }
 
 svg:not(#insta):hover {

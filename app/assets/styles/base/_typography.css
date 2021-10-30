@@ -147,6 +147,7 @@ a {
 
 .yellow {
     background: $yellow;
+    color: $red;
 }
 
 .bold {
@@ -157,6 +158,11 @@ a {
     }
 }
 
+.inverse {
+    background: $darkest;
+    color: $lightest;
+}
+
 .italic {
     font-family: $nmi;
     color: $dark;
@@ -164,4 +170,9 @@ a {
 
 .prot {
     display: none;
+}
+
+.scroll-down {
+    font-size: $mid;
+    font-family: nmb;
 }

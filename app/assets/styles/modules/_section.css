@@ -44,9 +44,9 @@
         &__title {
             margin: 0;
             margin-bottom: 4rem;
-            &:hover {
+            /* &:hover {
                 background: $yellow;
-            }
+            } */
             @mixin atSmall {
                 font-size: $text;
                 font-family: $nmb;
@@ -58,9 +58,17 @@
         }
         &__text {
             width: 80%;
+            margin-bottom: 4rem;
+            list-style: none;
         }
         &__link {
             color: $darkest;
+            font-size: $mid;
+            font-family: $nmr;
+            &:hover {
+                background: $red;
+                color: $white;
+            }
         }
     }
     &__back {
@@ -72,4 +80,22 @@
     margin-top: 8rem;
     width: 100%;
     line-height: 2;
+}
+
+.neon {
+    animation-name: neon;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes neon {
+    0% {
+        background: $lightest;
+        color: $darkest;
+    }
+    50% {
+        background: $red;
+        color: $white;
+    }
 }
