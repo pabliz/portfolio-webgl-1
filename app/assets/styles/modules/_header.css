@@ -1,7 +1,7 @@
 .header {
     display: none;
     width: 100%;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 10%, rgba(255, 255, 255, 1) 40%);
+    /* background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 10%, rgba(255, 255, 255, 1) 40%); */
     @mixin atSmall {
         z-index: 1;
         display: flex;
