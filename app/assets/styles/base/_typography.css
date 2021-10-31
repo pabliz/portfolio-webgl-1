@@ -1,6 +1,22 @@
 /*IMPORTS*/
 
 @font-face {
+    font-family: 'Inconsolata';
+    src: url('./assets/fonts/Inconsolata-Regular.woff2') format('woff2'), url('./assets/fonts/Inconsolata-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inconsolata SemiExpanded';
+    src: url('./assets/fonts/InconsolataSemiExpanded-Regular.woff2') format('woff2'), url('./assets/fonts/InconsolataSemiExpanded-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: "Neue Montreal Regular";
     src: url("./assets/fonts/NeueMontreal-Regular.woff") format("woff");
 }
@@ -28,21 +44,6 @@
 @font-face {
     font-family: "Neue Montreal Bold Italic";
     src: url("./assets/fonts/NeueMontreal-BoldItalic.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Formula Condensed Bold";
-    src: url("./assets/fonts/FormulaCondensed-Bold.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Formula Condensed Light";
-    src: url("./assets/fonts/FormulaCondensed-Light.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Formula Condensed Regular";
-    src: url("./assets/fonts/FormulaCondensed-Regular.woff") format("woff");
 }
 
 

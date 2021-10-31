@@ -25,29 +25,11 @@ $darkest: #17191C;
 
 /* SIZES */
 
-
-/* $huge: 17rem; */
-
 $huge: clamp(7.2rem, -0.875rem + 8.333333vw, 17rem);
-
-/* $big: 7.2rem; */
-
 $big: clamp(3.2rem, -0.875rem + 8.333333vw, 7.2rem);
-
-/* $mid: 4.0rem; */
-
 $mid: clamp(1.6rem, -0.875rem + 8.333333vw, 3.2rem);
-
-/* $text: 1.6rem; */
-
 $text: clamp(1.2rem, -0.875rem + 8.333333vw, 1.6rem);
-
-/* $small: 1.2rem; */
-
 $small: clamp(1rem, -0.875rem + 8.333333vw, 1.2rem);
-
-/* $tiny: 1rem; */
-
 $tiny: clamp(.8rem, -0.875rem + 8.333333vw, 1rem);
 $svg: clamp(4.8rem, -0.875rem + 8.333333vw, 6.4rem);
 

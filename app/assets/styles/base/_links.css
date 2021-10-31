@@ -10,6 +10,7 @@ a {
     letter-spacing: 0.2rem;
     color: $darkest;
     line-height: 1.5;
+    background: $yellow;
     &:after {
         background: $dark;
         bottom: 0;
@@ -22,10 +23,11 @@ a {
         transform: scaleX(0);
         transform-origin: right center;
     }
-    &:hover{
+    &:hover {
         background: $yellow;
         &:after {
-        transform: scaleX(1);
-        transform-origin: left center;}
+            transform: scaleX(1);
+            transform-origin: left center;
+        }
     }
 }

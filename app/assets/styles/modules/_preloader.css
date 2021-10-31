@@ -14,10 +14,10 @@
     &__text {
         width: auto;
         &__paragraph {
-            font-size: $text;
+            font-size: $mid;
             font-family: $nmr;
             &:after {
-                background: $light;
+                background: $lightest;
                 bottom: 30%;
                 content: '';
                 height: 1px;
@@ -34,9 +34,9 @@
         }
     }
     &__text__paragraph__loading {
-        color: $light;
+        color: $lightest;
         font-size: $mid;
-        font-family: $nmli;
+        font-family: $nml;
     }
 }
 

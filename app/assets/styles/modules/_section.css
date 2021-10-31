@@ -2,9 +2,6 @@
     display: block;
     width: 100vw;
     padding: 2.4rem;
-    /* &:first-of-type {
-        padding-top: 40rem;
-    } */
     @mixin atSmall {
         padding: 2.4rem;
         width: 85%;
@@ -44,9 +41,6 @@
         &__title {
             margin: 0;
             margin-bottom: 4rem;
-            /* &:hover {
-                background: $yellow;
-            } */
             @mixin atSmall {
                 font-size: $text;
                 font-family: $nmb;
