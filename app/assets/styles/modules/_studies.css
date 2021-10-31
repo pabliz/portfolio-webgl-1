@@ -5,7 +5,12 @@
     flex-direction: column;
     &__title {
         position: relative;
-        margin: 4rem 0;
+        margin-top: 4.8rem;
+        margin-bottom: 2.4rem;
+        @mixin atSmall {
+            margin-top: 0;
+            margin-bottom: 4.8rem;
+        }
         &:after {
             background: $dark;
             bottom: 0;

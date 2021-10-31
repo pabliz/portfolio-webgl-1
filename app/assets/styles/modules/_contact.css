@@ -1,22 +1,29 @@
 .contact {
     width: 100vw;
     word-wrap: break-all;
-    padding: 2.4rem;
+    padding-left: 2.4rem;
     white-space: normal;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     @mixin atSmall {
         width: 80%;
-        padding: 4.8rem;
-        height: 80vh;
+        padding-left: 4.8rem;
+        height: 90vh;
         margin-right: 4.8rem;
+        margin-bottom: 4.8rem;
         justify-content: flex-end;
     }
     @mixin atMedium {
-        height: 90vh;
+        height: auto;
+        margin-top: 15%;
+    }
+    @mixin atLarge {
+        height: 100vh;
+        margin-top: 0;
     }
     &__text {
+        margin: 0;
         padding-top: 4.8rem;
         padding-bottom: 4.8rem;
         font-size: $mid;
@@ -56,19 +63,14 @@
     }
 }
 
-.copiedtext {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(-1em);
-    color: #000;
-    transition: all .500s;
+#scroll-down,
+#scroll-top {
+    display: none;
+    @mixin atLarge {
+        display: block;
+    }
 }
 
-.copied .copiedtext {
-    opacity: 1;
-    transform: translateY(-2em);
+section#footer {
+    height: auto;
 }

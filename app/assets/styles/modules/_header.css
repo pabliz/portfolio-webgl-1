@@ -10,13 +10,20 @@
         position: fixed;
         top: 0;
         left: 0;
-        padding: 4.8rem;
+        padding: 2.4rem;
+        padding-left: 4.8rem;
         flex-direction: column;
         align-items: flex-start;
     }
+    @mixin atMedium {
+        padding: 0;
+        padding-left: 4.8rem;
+        padding-bottom: 1.2rem;
+    }
     @mixin atLarge {
-        padding: 2rem 4.8rem;
-        padding-top: 1rem;
+        padding-top: 1.2rem;
+        padding-left: 4.8rem;
+        padding-bottom: 2.4rem;
     }
     & h2 {
         @mixin atSmall {
@@ -29,7 +36,6 @@
         background: $darkest;
         color: $lightest;
         display: block;
-        height: 100%;
         padding: 2.4rem;
         @mixin atSmall {
             display: none;
@@ -115,5 +121,12 @@
     display: block;
     @mixin atSmall {
         display: none;
+    }
+}
+
+.hide-on-mobile {
+    display: none;
+    @mixin atSmall {
+        display: inline;
     }
 }

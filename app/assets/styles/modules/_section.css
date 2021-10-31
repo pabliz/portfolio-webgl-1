@@ -107,3 +107,12 @@
         color: $white;
     }
 }
+
+section#word {
+    border-bottom: 1px solid $dark;
+    @mixin atSmall {
+        border: none;
+        margin-bottom: 0;
+        padding-bottom: 4.8rem;
+    }
+}
