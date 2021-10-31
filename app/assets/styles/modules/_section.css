@@ -60,6 +60,14 @@
             width: 80%;
             margin-bottom: 4rem;
             list-style: none;
+            & a {
+                color: $darkest;
+                font-family: $nmb;
+                &:hover {
+                    background: $red;
+                    color: $white;
+                }
+            }
         }
         &__link {
             color: $darkest;
