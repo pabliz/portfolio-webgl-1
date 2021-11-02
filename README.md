@@ -1,4 +1,5 @@
-# a single-page portfolio website
+# Single-page portfolio website
+
 Style: Brutalist websites
 Tools used: Node.js, Webpack, GSAP, Three.js
 
