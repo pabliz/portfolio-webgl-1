@@ -1,9 +1,9 @@
 .studies {
-    padding: 4.8rem;
+    /* padding: 4.8rem;
     margin-left: 4.8rem;
     display: flex;
-    flex-direction: column;
-    &__title {
+    flex-direction: column; */
+    /* &__title {
         position: relative;
         margin-top: 4.8rem;
         margin-bottom: 2.4rem;
@@ -34,7 +34,7 @@
             line-height: 2;
             margin-right: 2.4rem;
         }
-    }
+    } */
     &__list {
         margin-top: 2.4rem;
         list-style: none;
@@ -42,7 +42,6 @@
         &__item {
             line-height: 1.5;
             font-size: $mid;
-            margin-right: 2.4rem;
             &:hover {
                 background: $yellow;
                 color: $darkest;

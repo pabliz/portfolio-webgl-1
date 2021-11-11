@@ -1,41 +1,35 @@
 .header {
-    display: flex;
-    padding: 2.4rem;
-    flex-direction: column;
-    align-items: flex-start;
     background: $darkest;
+    color: $lightest;
+    display: none;
     width: 100%;
-    border-bottom: 1px solid $lightest;
     @mixin atSmall {
-        /* z-index: 1; */
+        z-index: 1;
+        display: flex;
+        position: relative;
         /* position: absolute;
         top: 0;
         left: 0; */
-        /* padding-left: 4.8rem; */
-        /* justify-content: center; */
+        padding: 2.4rem;
+        padding-left: 4.8rem;
+        flex-direction: column;
+        align-items: center;
     }
     @mixin atMedium {
-        /* padding: 0; */
+        padding: 0;
         padding-left: 4.8rem;
-        /* padding-bottom: 1.2rem; */
+        padding-bottom: 1.2rem;
     }
     @mixin atLarge {
-        align-items: center;
         padding-top: 1.2rem;
-        /* padding-left: 4.8rem; */
+        padding-left: 4.8rem;
         padding-bottom: 2.4rem;
     }
     & h2 {
         @mixin atSmall {
-            color: $light;
-            /* -webkit-text-fill-color: transparent;
-            -webkit-text-stroke-width: 1px; */
-        }
-        @mixin atMedium {
-            font-size: $mid;
-        }
-        @mixin atLarge {
-            font-size: $big;
+            color: $lightest;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 1px;
         }
     }
     &__mobile {
@@ -50,40 +44,33 @@
     &__title {
         position: relative;
         margin: 0;
-        margin-bottom: 2.4rem;
-        font-size: 6rem;
-        @mixin atSmall {
-            font-size: $huge;
-            &:after {
-                background: $dark;
-                bottom: 0;
-                content: '';
-                height: 1px;
-                left: 0;
-                position: absolute;
-                transition: transform 0.7s;
-                width: 100%;
-                transform: scaleX(0);
-                transform-origin: right center;
-            }
-            &:hover {
-                /* @mixin atLarge {
+        &:after {
+            background: $dark;
+            bottom: 0;
+            content: '';
+            height: 1px;
+            left: 0;
+            position: absolute;
+            transition: transform 0.7s;
+            width: 100%;
+            transform: scaleX(0);
+            transform-origin: right center;
+        }
+        &:hover {
+            @mixin atLarge {
                 -webkit-text-fill-color: transparent;
                 -webkit-text-stroke-width: 1px;
-            } */
-                &:after {
-                    transform: scaleX(1);
-                    transform-origin: left center;
-                }
+            }
+            &:after {
+                transform: scaleX(1);
+                transform-origin: left center;
             }
         }
     }
     &__subtitle {
-        line-height: 1.2;
         margin: 0;
         position: relative;
-        color: $light;
-        margin-bottom: 1.2rem;
+        color: $lightest;
         &:after {
             background: $dark;
             bottom: 0;
@@ -103,7 +90,7 @@
     }
     &__motto {
         position: relative;
-        color: $light;
+        color: $lightest;
         line-height: 1.5;
         @mxin atSmall {
             line-height: 1;

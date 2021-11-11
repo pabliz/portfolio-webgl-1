@@ -1,5 +1,5 @@
 .contact {
-    width: 100vw;
+    width: 100%;
     word-wrap: break-all;
     padding-left: 2.4rem;
     white-space: normal;
@@ -7,16 +7,15 @@
     flex-direction: column;
     justify-content: flex-start;
     @mixin atSmall {
-        width: 80%;
+        /* width: 80%; */
         padding-left: 4.8rem;
-        height: 90vh;
-        margin-right: 4.8rem;
-        margin-bottom: 4.8rem;
-        justify-content: flex-end;
+        /* height: 90vh; */
+        /* margin-right: 4.8rem;
+        margin-bottom: 4.8rem; */
+        /* justify-content: flex-end; */
     }
     @mixin atMedium {
         height: auto;
-        margin-top: 15%;
     }
     @mixin atLarge {
         height: 100vh;
@@ -29,7 +28,7 @@
         padding-bottom: 4.8rem;
         font-size: $mid;
         text-transform: uppercase;
-        color: $darkest;
+        color: $lightest;
         line-height: 1.5;
         @mixin atSmall {
             font-family: 'Inconsolata SemiExpanded', 'Courier New', Courier, monospace;
@@ -55,4 +54,6 @@
 
 section#footer {
     height: auto;
+    border-top: 1px solid $lightest;
+    padding: 2.4rem;
 }

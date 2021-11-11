@@ -11,11 +11,14 @@
     color: $dark;
     background: $darkest;
     z-index: 2;
+    /* opacity: 0; */
     &__text {
         width: auto;
         &__paragraph {
-            font-size: $mid;
+            font-size: $huge;
             font-family: $nmr;
+            text-transform: uppercase;
+            line-height: 1;
             &:after {
                 background: $lightest;
                 bottom: 30%;
@@ -34,9 +37,10 @@
         }
     }
     &__text__paragraph__loading {
+        text-transform: uppercase;
         color: $lightest;
-        font-size: $mid;
-        font-family: $nml;
+        font-size: $huge;
+        font-family: $nmr;
     }
 }
 

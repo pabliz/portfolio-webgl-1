@@ -33,17 +33,17 @@ window.addEventListener("load", () => {
 })
 
 // CURSOR
-const cursor = document.querySelector(".cursor")
+// const cursor = document.querySelector(".cursor")
 
-document.addEventListener('mousemove', (e) => {
-    gsap.to(cursor, {
-        x: (-e.pageX),
-        height: e.pageY,
-    })
-})
+// document.addEventListener('mousemove', (e) => {
+//     gsap.to(cursor, {
+//         x: (-e.pageX),
+//         height: e.pageY,
+//     })
+// })
 
-document.addEventListener("dblclick", () => {
-        cursor.classList.toggle("hidden");
-    })
-    // SWAPSPAN
+// document.addEventListener("dblclick", () => {
+//         cursor.classList.toggle("hidden");
+//     })
+// SWAPSPAN
 new SwapSpan();

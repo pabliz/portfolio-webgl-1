@@ -57,39 +57,34 @@ h6 {
     line-height: 1.05;
 }
 
-h2 {
-    letter-spacing: 0.7rem;
-}
-
-h3 {
-    letter-spacing: 0.35rem;
-}
-
 h1 {
     font-size: $huge;
-    font-family: $nmb;
+    font-family: $nmr;
     text-transform: uppercase;
     letter-spacing: 1rem;
     overflow: hidden;
+    color: $lightest;
     & span {
         display: inline-block;
     }
+    /* @mixin atSmall {
+        color: $lightest;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+    } */
 }
 
 h2 {
     font-size: $big;
-    font-family: $nmb;
-    color: $dark;
-    @mixin atSmall {
-        color: $darkest;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke-width: 1px;
-    }
+    font-family: $nmr;
+    color: $light;
+    letter-spacing: 0.7rem;
 }
 
 h3 {
     font-size: $mid;
     font-family: $nml;
+    letter-spacing: 0.35rem;
 }
 
 h4 {
