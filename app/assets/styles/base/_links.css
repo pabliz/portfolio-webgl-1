@@ -1,5 +1,6 @@
 a {
     cursor: crosshair;
+    /* pointer-events: none; */
 }
 
 .email {
