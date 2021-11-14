@@ -114,3 +114,10 @@ accordionTabs.forEach(button => {
 
 
 window.addEventListener("scroll", closeAccordionTabs)
+
+const text = document.querySelector('.circular__text')
+text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>")
+const element = document.querySelectorAll('.circular__text span')
+for (let i = 0; i < element.length; i++) {
+    element[i].style.transform = "rotate(" + i * 13.6 + "deg)"
+}
