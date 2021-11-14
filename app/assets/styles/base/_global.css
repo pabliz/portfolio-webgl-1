@@ -8,7 +8,9 @@ html {
     line-height: 1;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    cursor: none;
+    /* @mixin atLarge {
+        cursor: none;
+    } */
 }
 
 body {
@@ -44,22 +46,27 @@ main {
     }
 } */
 
-span {
+
+/* span {
     display: inline-block;
     pointer-events: none;
     transition: transform 0.1s linear;
 }
 
 .cursor {
-    pointer-events: none;
-    position: fixed;
-    padding: 0.3rem;
-    background-color: #fff;
-    border-radius: 50%;
-    mix-blend-mode: difference;
-    transition: transform 0.3s ease;
-    transform: scale(8);
-    z-index: 10;
+    visibility: hidden;
+    @mixin atLarge {
+        visibility: visible;
+        pointer-events: none;
+        position: fixed;
+        padding: 0.3rem;
+        background-color: #fff;
+        border-radius: 50%;
+        mix-blend-mode: difference;
+        transition: transform 0.3s ease;
+        transform: scale(8);
+        z-index: 10;
+    }
 }
 
 .hover-this {
@@ -68,7 +75,7 @@ span {
 
 .hover-this:hover~.cursor {
     transform: translate(-50%, -50%) scale(16);
-}
+} */
 
 .hidden {
     visibility: hidden;

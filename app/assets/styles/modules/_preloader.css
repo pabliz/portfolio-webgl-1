@@ -11,7 +11,7 @@
     color: $dark;
     background: $darkest;
     z-index: 2;
-    /* opacity: 0; */
+    opacity: 0;
     &__text {
         width: auto;
         &__paragraph {

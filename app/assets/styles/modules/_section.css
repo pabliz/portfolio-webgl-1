@@ -1,4 +1,5 @@
 .section {
+    margin: 4.8rem 0;
     display: block;
     width: 100%;
     padding: 2.4rem;
@@ -11,9 +12,8 @@
         flex-direction: row-reverse;
     }
     @mixin atMedium {
-        padding: 2.4rem;
         padding-top: 0;
-        width: 90%;
+        width: 100%;
     }
     &:nth-child(2n) {
         @mixin atSmall {
@@ -24,7 +24,7 @@
         width: 60%;
         margin: 2.4rem;
         @mixin atSmall {
-            width: 50%;
+            width: 40%;
             padding: 0;
             display: flex;
             justify-content: center;
@@ -42,9 +42,10 @@
             margin-bottom: 4rem;
         }
         &__text {
-            width: 90%;
+            width: 100%;
             margin-bottom: 4rem;
             list-style: none;
+            padding: 2.4rem 0;
             & a {
                 color: $red;
                 font-family: $nmb;
@@ -52,6 +53,9 @@
                     background: $red;
                     color: $white;
                 }
+            }
+            @mixin atSmall {
+                width: 80%;
             }
         }
         &__link {
@@ -81,6 +85,21 @@
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+.pl48 {
+    padding-left: 0;
+    @mixin atMedium {
+        padding-left: 5.6rem;
+    }
+}
+
+.first {
+    min-height: 85vh;
+}
+
+.separator {
+    min-height: 4.8rem;
 }
 
 @keyframes neon {

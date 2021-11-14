@@ -154,14 +154,26 @@ a {
     }
 }
 
+.overline {
+    text-decoration: overline;
+    &:hover {
+        color: $darkest;
+        background: $yellow;
+    }
+}
+
+.lh2 {
+    line-height: 2;
+}
+
 .inverse {
-    background: $darkest;
-    color: $lightest;
+    background: $lightest;
+    color: $darkest;
 }
 
 .italic {
     font-family: $nmi;
-    color: $dark;
+    color: $light;
 }
 
 .prot {

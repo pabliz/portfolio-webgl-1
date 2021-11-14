@@ -17,6 +17,9 @@ new Canvas({
 
 const preloader = document.querySelector(".preloader");
 const main = document.querySelector("main");
+const link = document.querySelector('.hover-this');
+const cursor = document.querySelector(".cursor")
+const img = document.querySelectorAll("img")
 
 window.addEventListener("load", () => {
 
@@ -32,33 +35,44 @@ window.addEventListener("load", () => {
     })
 })
 
+
+
+////////////////////////////////////////////////////////
 // CURSOR
-const animateit = function(e) {
-    const span = this.querySelector('span');
-    const { offsetX: x, offsetY: y } = e, { offsetWidth: width, offsetHeight: height } = this,
+// const animateit = function(e) {
+//     const span = this.querySelector('span');
+//     const { offsetX: x, offsetY: y } = e, { offsetWidth: width, offsetHeight: height } = this,
 
-    move = 8,
-        xMove = x / width * (move * 2) + move,
-        yMove = y / height * (move * 2) - move;
+//     move = 8,
+//         xMove = x / width * (move * 2) + move,
+//         yMove = y / height * (move * 2) - move;
 
-    span.style.transform = `translate(${xMove}px, ${yMove}px)`;
+//     span.style.transform = `translate(${xMove}px, ${yMove}px)`;
 
-    if (e.type === 'mouseleave') span.style.transform = '';
-};
+//     if (e.type === 'mouseleave') span.style.transform = '';
+// };
 
 
-const link = document.querySelector('.hover-this');
-const cursor = document.querySelector(".cursor")
-const editCursor = e => {
-    const { clientX: x, clientY: y } = e;
-    cursor.style.left = x + 'px';
-    cursor.style.top = y + 'px';
-};
 
-link.addEventListener('mousemove', animateit);
-link.addEventListener('mouseleave', animateit);
-window.addEventListener('mousemove', editCursor);
+// const editCursor = e => {
+//     const { clientX: x, clientY: y } = e;
+//     cursor.style.left = x + 'px';
+//     cursor.style.top = y + 'px';
+// };
 
+// const cursorHide = (e) => {
+//     cursor.style.visibility = 'hidden'
+//     if (e.type === 'mouseleave') cursor.style.visibility = 'visible';
+// }
+
+// link.addEventListener('mousemove', animateit);
+// link.addEventListener('mouseleave', animateit);
+// window.addEventListener('mousemove', editCursor);
+// img.forEach(el => {
+//     el.addEventListener('mousemove', cursorHide)
+//     el.addEventListener('mouseleave', cursorHide)
+// })
+/////////////////////////////////////////////////////
 // document.addEventListener('mousemove', (e) => {
 //     gsap.to(cursor, {
 //         x: (-e.pageX),
@@ -71,3 +85,32 @@ window.addEventListener('mousemove', editCursor);
 //     })
 // SWAPSPAN
 new SwapSpan();
+
+const accordionTabs = document.querySelectorAll(".accordion__button")
+let accordionContent = document.querySelectorAll(".accordion__content")
+
+const closeAccordionTabs = () => {
+    accordionContent.forEach(content => {
+        content.classList.remove("isActive")
+    })
+    accordionTabs.forEach(button => {
+        button.classList.remove("accordion__button--active")
+    })
+}
+
+accordionTabs.forEach(button => {
+    const thisContent = button.nextElementSibling;
+    button.addEventListener("click", () => {
+        if (button.classList.contains('accordion__button--active')) {
+            closeAccordionTabs()
+        } else {
+            closeAccordionTabs()
+            button.classList.add('accordion__button--active')
+            thisContent.classList.add("isActive")
+        }
+    })
+})
+
+
+
+window.addEventListener("scroll", closeAccordionTabs)

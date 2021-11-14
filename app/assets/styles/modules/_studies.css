@@ -27,14 +27,15 @@
             transform: scaleX(1);
             transform-origin: left center;
         }
-    }
+    }*/
     &__text {
-        display: none;
+        /* display: none; */
         @mixin atSmall {
+            font-size: $small;
             line-height: 2;
             margin-right: 2.4rem;
         }
-    } */
+    }
     &__list {
         margin-top: 2.4rem;
         list-style: none;
@@ -42,10 +43,56 @@
         &__item {
             line-height: 1.5;
             font-size: $mid;
-            &:hover {
+            /* &:hover {
                 background: $yellow;
                 color: $darkest;
-            }
+            } */
         }
     }
+}
+
+.accordion__button {
+    width: 100%;
+    padding: 2.4rem 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: $darkest;
+    color: $lightest;
+    text-align: left;
+}
+
+.accordion__button:after {
+    content: '+';
+    float: right;
+    padding-right: 2.4rem;
+    margin-right: 2.4rem;
+    @mixin atSmall {
+        padding-right: 4.8rem;
+        margin-right: 4.8rem;
+    }
+}
+
+.accordion__button--active:after {
+    content: '-';
+    float: right;
+    padding-right: 2.4rem;
+    margin-right: 2.4rem;
+    @mixin atSmall {
+        padding-right: 4.8rem;
+        margin-right: 4.8rem;
+    }
+}
+
+.accordion__content {
+    display: none;
+    transform: scaleY(0);
+    & p {
+        width: 80%;
+    }
+}
+
+.isActive {
+    display: block;
+    transform: scaleY(1);
 }

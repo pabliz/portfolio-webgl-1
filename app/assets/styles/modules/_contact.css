@@ -8,7 +8,7 @@
     justify-content: flex-start;
     @mixin atSmall {
         /* width: 80%; */
-        padding-left: 4.8rem;
+        padding: 4.8rem;
         /* height: 90vh; */
         /* margin-right: 4.8rem;
         margin-bottom: 4.8rem; */
@@ -40,6 +40,9 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-end;
+    }
+    &__social__col {
+        padding: 2.4rem;
     }
 }
 

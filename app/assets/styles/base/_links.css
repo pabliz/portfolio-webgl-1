@@ -1,5 +1,5 @@
 a {
-    cursor: crosshair;
+    /* cursor: crosshair; */
     /* pointer-events: none; */
 }
 
@@ -30,5 +30,15 @@ a {
             transform: scaleX(1);
             transform-origin: left center;
         }
+    }
+}
+
+.social-links {
+    display: block;
+    margin-top: 2.4rem;
+    color: $lightest;
+    &:hover {
+        color: $lightest;
+        background: $red;
     }
 }
