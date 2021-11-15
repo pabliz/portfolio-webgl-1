@@ -55,6 +55,10 @@
     }
 }
 
+#scroll-down {
+    padding-top: 0;
+}
+
 section#footer {
     height: auto;
     border-top: 1px solid $lightest;
