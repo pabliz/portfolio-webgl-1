@@ -31,9 +31,9 @@
     &__text {
         /* display: none; */
         @mixin atSmall {
+            margin-right: 2.4rem;
             font-size: $small;
             line-height: 2;
-            margin-right: 2.4rem;
         }
     }
     &__list {
