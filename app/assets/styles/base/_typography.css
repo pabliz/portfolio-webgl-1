@@ -176,6 +176,27 @@ a {
     color: $light;
 }
 
+.hili {
+    position: relative;
+    &:after {
+        background: $light;
+        color: $light;
+        bottom: 10%;
+        content: '';
+        height: 1px;
+        left: 0;
+        position: absolute;
+        transition: transform 0.7s;
+        width: 100%;
+        transform: scaleX(0);
+        transform-origin: right center;
+    }
+    &:hover:after {
+        transform: scaleX(1);
+        transform-origin: left center;
+    }
+}
+
 .prot {
     display: none;
 }

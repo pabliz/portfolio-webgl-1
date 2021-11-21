@@ -1,8 +1,9 @@
 .section {
-    margin: 4.8rem 0;
+    margin: 4.8rem 0 4.8rem 0;
     display: block;
     width: 100%;
     padding: 2.4rem;
+    border-bottom: 1px solid $lightest;
     @mixin atSmall {
         width: 100%;
         display: flex;
@@ -57,6 +58,11 @@
             @mixin atSmall {
                 width: 80%;
             }
+            &__about {
+                width: 100%;
+                color: $lightest;
+                margin-left: 2.4rem;
+            }
         }
         &__link {
             margin-top: 4.8rem;
@@ -94,12 +100,23 @@
     }
 }
 
-.first {
-    min-height: 85vh;
+.bb {
+    border-bottom: 1px solid $lightest;
 }
 
+
+/* .first {
+    min-height: 85vh;
+} */
+
 .separator {
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 4.8rem;
     min-height: 4.8rem;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
 }
 
 @keyframes neon {
